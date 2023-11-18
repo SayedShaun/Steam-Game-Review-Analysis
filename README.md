@@ -1,3 +1,5 @@
+![steam analysis demp](https://github.com/SayedShaun/Steam-Review-Analysis/assets/126845316/15ff16de-e925-493b-8f05-e474844511b2)
+
 # Steam Review Analysis
 
 ## Overview
