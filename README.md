@@ -5,7 +5,7 @@ Live Demo: https://steam-review-analysis.streamlit.app
 
 ## Overview
 
-This repository contains code and data for analyzing Steam game reviews. The analysis includes sentiment analysis and classification using various machine learning models.
+This project involves creating a Steam game review analysis system. It will take user-provided game reviews and classify whether the game is recommended or not based on the sentiment or content of the review. Essentially, it aims to assess whether a particular game is positively or negatively reviewed by users.
 
 ## Features
 
