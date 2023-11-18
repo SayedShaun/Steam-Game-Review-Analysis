@@ -24,7 +24,7 @@ This repository contains code and data for analyzing Steam game reviews. The ana
 1. **Clone the Repository**:
 
     ```bash
-    [git clone https://github.com/yourusername/steam-review-analysis.git](https://github.com/SayedShaun/Steam-Review-Analysis.git)
+    git clone https://github.com/yourusername/steam-review-analysis.git
     cd steam-review-analysis
     ```
 
