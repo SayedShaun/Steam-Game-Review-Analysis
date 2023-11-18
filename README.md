@@ -1,4 +1,4 @@
-![steam analysis demp](https://github.com/SayedShaun/Steam-Review-Analysis/assets/126845316/66e2f474-247d-49c1-890f-b0e070ad61f8)
+![steam analysis demp](https://github.com/SayedShaun/Steam-Review-Analysis/assets/126845316/e85f67fb-2f5f-4fb9-9769-ec0bdbc43aff)
 
 Live Demo: https://steam-review-analysis.streamlit.app
 # Steam Review Analysis
