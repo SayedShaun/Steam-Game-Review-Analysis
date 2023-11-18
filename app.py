@@ -6,6 +6,10 @@ from nltk.stem.porter import PorterStemmer
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
+from PIL import  Image
+
+image = Image.open("Images/Steam_icon_logo.png")
+st.set_page_config(page_title='Steam',page_icon=image)
 
 hide_streamlit_style = """
 <style>
