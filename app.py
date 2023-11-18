@@ -19,7 +19,7 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.title("Steam Game Review Clasification")
+st.title("Steam Game Review Analysis")
 input_data = st.text_area("Leave Steam Review", height=150)
 def preprocess(text):
     stopwords = ['a', 'about', 'above', 'after', 'again', 'ain', 'all', 'am', 'an',
@@ -49,15 +49,12 @@ def preprocess(text):
     ps = PorterStemmer()
     stemmed_words = [ps.stem(word) for word in cleaned_text.split()]
     cleaned_text = " ".join(stemmed_words)
-
     return cleaned_text
     
-
 def text_transform(text):
     tfidf = joblib.load("Models/tfidf")
     vector = tfidf.transform([preprocess(text)])
     return vector
-vector = text_transform(input_data)
 
 def prediction(text):
     xgb = joblib.load("Models/XGBClassifier.joblib")
@@ -77,11 +74,13 @@ def prediction(text):
     majority_predictions = np.round(np.mean(predictions_array, axis=0)).astype(int)
     return majority_predictions
 
-output = prediction(vector)
-
 if st.button("Predict", use_container_width=True):
-    output = output
-    if output == 0:
-        st.image("Images/Not Recommended.gif")
-    elif output == 1:
-        st.image("Images/Recommended.gif")
+    if len(input_data.strip()) == 0:
+        st.header("Please Provide Text")
+    else:
+        vector = text_transform(input_data)
+        output = prediction(vector)
+        if output == 0:
+            st.image("Images/Not Recommended.gif")
+        elif output == 1:
+            st.image("Images/Recommended.gif")
