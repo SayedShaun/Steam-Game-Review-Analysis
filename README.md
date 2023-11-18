@@ -27,8 +27,8 @@ This project involves creating a Steam game review analysis system. It will take
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/yourusername/steam-review-analysis.git
-    cd steam-review-analysis
+    git clone https://github.com/SayedShaun/Steam-Game-Review-Analysis.git
+    cd Steam-Game-Review-Analysis
     ```
 
 2. **Install Dependencies**:
