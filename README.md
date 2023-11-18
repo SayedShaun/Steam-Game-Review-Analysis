@@ -23,28 +23,6 @@ The aim of this project is to develop a classification system for Steam game rev
 
 ## Usage
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   [git clone https://github.com/your-username/steam-game-review-classification.git](https://github.com/SayedShaun/Steam-Game-Review-Classification.git)
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd steam-game-review-classification
-   ```
-
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Running the Application
-
-Run the Streamlit app:
-   ```bash
-   streamlit run app.py
    ```
 
 ### Model Usage
